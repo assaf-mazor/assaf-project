@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication2.SiteMaster" %>
+
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head runat="server">
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <title>אסף מזור</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header">
+            <div class="nav-container">
+                <a href="Home.aspx" class="nav-link">דף הבית</a> |
+                <a href="SignUp.aspx" class="nav-link">הרשמה</a> |
+                <a href="SignIn.aspx" class="nav-link">התחברות</a>
+            </div>
+        </div>
+
+        <div class="page-wrapper">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
